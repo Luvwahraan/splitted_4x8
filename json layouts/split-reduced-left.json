@@ -1,0 +1,158 @@
+[
+  {
+    "backcolor": "#cccccc",
+    "name": "Split reduced left",
+    "author": "Luvwahraan",
+    "notes": "Center text:        Hold keys (or tap with emojis)\nLeft/right text:    Tap keys (like caracters)\nLeft legend:        double tap\nCenter legend:      tap/double tap on hold only keys, hold on tap keys\nRight legend:       double tap\n\nTab and shift needs 2u with double 1u mounting, but two 1u each is fine too.\nRGui (right win key) reserved for compose (tap and double tap on LShift).\nReset is an hidden key, who needs to be in case.\n\nhttp://www.keyboard-layout-editor.com/\nhttps://kbfirmware.com/\nhttp://builder.swillkb.com/",
+    "radii": "10px",
+    "switchMount": "cherry",
+    "switchBrand": "outemu",
+    "switchType": "PG150R01-1",
+    "plate": true
+  },
+  [
+    {
+      "c": "#f0b5ff",
+      "t": "#000000\n#9e1c1c\n#398c5a\n\n\n#9e1c1c",
+      "a": 0,
+      "f": 5
+    },
+    "$\n–\n#\n¶\n⎋",
+    "\"\n—\n1\n„\n①\n⌥①",
+    "«\n<\n2\n”\n②\n⌥②",
+    "»\n>\n3\n”\n③\n⌥③",
+    "(\n[\n4\n⩽\n④\n⌥④",
+    {
+      "t": "#000000\n#9e1c1c\n#398c5a\n#970cce\n\n#9e1c1c"
+    },
+    ")\n̏]\n5\n⩾\n④\n⌥④",
+    {
+      "c": "#a3ccff",
+      "t": "#000000",
+      "a": 7,
+      "f": 7
+    },
+    "🗑️",
+    {
+      "f": 9,
+      "h": 1.5
+    },
+    "⌫"
+  ],
+  [
+    {
+      "c": "#970cce",
+      "t": "#cccccc\n#9e1c1c\n\n#970cce\n\n\n\n\n\n\n\n#ffffff",
+      "a": 0,
+      "f": 8
+    },
+    "📄\n\n\n📄\n✂",
+    {
+      "c": "#a3ccff",
+      "t": "#000000",
+      "a": 7,
+      "f": 9
+    },
+    "⭾\n\n\n\n⎈",
+    {
+      "c": "#feffc9",
+      "t": "#000000\n#9e1c1c\n#398c5a\n#970cce",
+      "a": 4,
+      "f": 6
+    },
+    "b\n|\n\n¦",
+    "é\n˝´\n\n˝",
+    "p\n&\n\n§",
+    "o\nœ",
+    {
+      "a": 0
+    },
+    "è\n̏`\n\n`\n⤉",
+    {
+      "x": 1.25,
+      "c": "#000000",
+      "t": "#cccccc\n#9e1c1c\n#398c5a\n#970cce",
+      "a": 4,
+      "f": 2
+    },
+    "reset"
+  ],
+  [
+    {
+      "y": -0.5,
+      "x": 7,
+      "c": "#a3ccff",
+      "t": "#000000",
+      "a": 7,
+      "f": 9,
+      "h": 1.5
+    },
+    "⎆"
+  ],
+  [
+    {
+      "y": -0.5,
+      "c": "#970cce",
+      "t": "#cccccc"
+    },
+    "📋",
+    {
+      "c": "#a3ccff",
+      "t": "#000000"
+    },
+    "⭾\n\n\n\n⎈",
+    {
+      "c": "#feffc9",
+      "t": "#000000\n#9e1c1c\n#398c5a\n#970cce",
+      "a": 4,
+      "f": 6
+    },
+    "a\næ",
+    "u\nù",
+    "i\n¨\n\n˙",
+    {
+      "n": true
+    },
+    "e\n€\n\n¤",
+    {
+      "a": 0
+    },
+    ",\n'\n;\n̦̦\n⤈"
+  ],
+  [
+    {
+      "c": "#398c5a",
+      "t": "#cccccc\n\n\n\n#ffffff",
+      "a": 7,
+      "f": 9
+    },
+    "🡅\n\n\n\n⎄",
+    "🡅\n\n\n\n⎄",
+    {
+      "c": "#71f0de",
+      "t": "#000000\n#9e1c1c\n\n#970cce",
+      "a": 4,
+      "f": 6
+    },
+    "à\n\\\n\n\n❖",
+    {
+      "c": "#9e1c1c",
+      "t": "#cccccc\n#cccccc\n\n#970cce"
+    },
+    "y\n{\n\n‘\n⌥",
+    {
+      "c": "#feffc9",
+      "t": "#000000\n#9e1c1c\n#398c5a\n#970cce"
+    },
+    "x\n}\n\n’",
+    ".\n…\n:\n·",
+    "k\n~",
+    {
+      "c": "#a3ccff",
+      "t": "#000000",
+      "a": 3,
+      "f": 9
+    },
+    "␣\n\n\n\n\n←WS"
+  ]
+]
