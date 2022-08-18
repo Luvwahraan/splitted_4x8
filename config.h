@@ -10,3 +10,8 @@
 #define UNUSED_PINS
 
 #define DIODE_DIRECTION COL2ROW
+
+
+
+// Layer on 3 bits: 8 layers max.
+#define LAYER_STATE_8BIT

@@ -1,4 +1,11 @@
 
+enum layers {
+    /*_BASE_LEFT,
+    _WINDOWS_LEFT,*/
+    _BASE_RIGHT,
+    _WINDOWS_RIGHT,
+};
+
 /*const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {*/
     /* keymap 0: default right layer                                     *
      * QK BOOT is hidden inside the case.                                *
@@ -27,7 +34,7 @@
         /**/         /**/         /**/         /**/         /**/         /**/         /**/         /**/         /**/
         /**/         /**/         /**/         /**/         /**/         /**/         /**/         /**/         /**/
         /**/         /*********************************************************************************************/
-QK_BOOT,/**/         /**/BP_DCRC ,/**/BP_V    ,/**/BP_D    ,/**/BP_L    ,/**/BP_J    ,/**/BP_Z    ,/**/TD_UNDO  ,/**/
+QK_BOOT,/**/         /**/BP_DCRC ,/**/BP_V    ,/**/BP_D    ,/**/BP_L    ,/**/BP_J    ,/**/BP_Z    ,/**/TD_UNDO ,/**/
         /***************/         /**/         /**/         /**/         /**/         /**/         /**/         /**/
         /**/         /**/         /**/         /**/         /**/         /**/         /**/         /**/         /**/
         /**/         /**/         /**/         /**/         /**/         /**/         /**/         /**/         /**/

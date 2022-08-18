@@ -1,0 +1,174 @@
+[
+  {
+    "backcolor": "#cccccc",
+    "name": "Split reduced right",
+    "author": "Luvwahraan",
+    "notes": "Center text:        Hold keys (or tap with emojis)\nLeft/right text:    Tap keys (like caracters)\nLeft legend:        double tap\nCenter legend:      tap/double tap on hold only keys, hold on tap keys\nRight legend:       double tap\n\nRGui (right win key) reserved for compose (tap and double tap on RShift).\nReset is an hidden key, who needs to be in case.\n\nhttp://www.keyboard-layout-editor.com/\nhttps://kbfirmware.com/\nhttp://builder.swillkb.com/",
+    "radii": "10px",
+    "switchMount": "cherry",
+    "switchBrand": "outemu",
+    "switchType": "PG150R01-1",
+    "plate": true
+  },
+  [
+    {
+      "c": "#f0b5ff",
+      "t": "#000000\n#9e1c1c\n#398c5a\n\n\n#9e1c1c",
+      "a": 0,
+      "f": 5
+    },
+    "@\n^\n6\n\n⑥\n⌥⑥",
+    {
+      "t": "#000000\n#9e1c1c\n#398c5a\n#970cce\n\n#9e1c1c"
+    },
+    "+\n±\n7\n¬\n⑦\n⌥⑦",
+    "-\n−\n8\n¼\n⑧\n⌥⑧",
+    "/\n÷\n9\n½\n⑨\n⌥⑨",
+    "*\n×\n0\n¾\n⑩\n⌥⑩",
+    "=\n≠\n°\n′\n⑪\n⌥⑪",
+    "%\n‰\n`\n″\n⑫\n⌥⑫"
+  ],
+  [
+    {
+      "c": "#970cce",
+      "t": "#cccccc",
+      "a": 3,
+      "f": 9
+    },
+    "⎌\n\n\n\n😊",
+    {
+      "c": "#feffc9",
+      "t": "#000000\n#9e1c1c\n#398c5a",
+      "a": 4,
+      "f": 6
+    },
+    "^\n¡\n!",
+    {
+      "t": "#000000\n#9e1c1c"
+    },
+    "v\nˇ",
+    {
+      "t": "#000000\n#9e1c1c\n\n#970cce"
+    },
+    "d\nð\n\nÐ",
+    "l\n/\n\n£",
+    {
+      "t": "#000000\n#9e1c1c"
+    },
+    "j\nĳ",
+    "z\nə"
+  ],
+  [
+    {
+      "c": "#a3ccff",
+      "t": "#000000",
+      "a": 7,
+      "f": 9
+    },
+    "⌫",
+    {
+      "c": "#feffc9",
+      "t": "#000000\n#9e1c1c\n\n#970cce",
+      "a": 0,
+      "f": 6
+    },
+    "c\n©\n\nſ\nç",
+    {
+      "t": "#000000\n#9e1c1c",
+      "a": 4,
+      "n": true
+    },
+    "t\nþ",
+    "s\nß",
+    {
+      "t": "#000000\n#9e1c1c\n\n#970cce"
+    },
+    "r\n®\n\n™",
+    {
+      "t": "#000000\n#9e1c1c",
+      "n": true
+    },
+    "n\n~",
+    {
+      "t": "#000000\n#9e1c1c\n\n#970cce"
+    },
+    "m\n¯\n\nº"
+  ],
+  [
+    {
+      "c": "#a3ccff",
+      "t": "#000000",
+      "a": 7,
+      "f": 9
+    },
+    "⌫",
+    {
+      "c": "#feffc9",
+      "t": "#000000\n#9e1c1c\n#398c5a\n#970cce",
+      "a": 4,
+      "f": 6
+    },
+    "’\n¿\n?\n̉",
+    {
+      "t": "#000000\n#9e1c1c\n\n#970cce"
+    },
+    "q\n°\n\n̛\n\n\n\n\n\n̉",
+    {
+      "t": "#000000\n#9e1c1c"
+    },
+    "g\nµ",
+    {
+      "t": "#000000\n#9e1c1c\n\n#970cce"
+    },
+    "h\n†\n\n‡",
+    "f\n˛\n\nª",
+    {
+      "c": "#398c5a",
+      "t": "#cccccc\n#9e1c1c"
+    },
+    "w\n˘\n\n\n🡅"
+  ],
+  [
+    {
+      "c": "#a3ccff",
+      "t": "#000000",
+      "a": 3,
+      "f": 9
+    },
+    "⎆\n\n\n\n⎇\n\n\n\n\n\n\n⎈",
+    "␣\n\n\n\n\nWS→",
+    {
+      "c": "#9e1c1c",
+      "t": "#cccccc",
+      "a": 7
+    },
+    "⎇\n\n\n\n⎄",
+    {
+      "c": "#71f0de",
+      "t": "#000000"
+    },
+    "❖\n\n\n\nFN",
+    {
+      "f": 3
+    },
+    "",
+    {
+      "f": 9
+    },
+    "",
+    {
+      "c": "#970cce"
+    },
+    "🕪\n\n\n\n⎈"
+  ],
+  [
+    {
+      "x": 5,
+      "c": "#000000",
+      "t": "#cccccc\n#9e1c1c",
+      "a": 4,
+      "f": 2
+    },
+    "Hidden\nreset\n\n\n\n\nkey"
+  ]
+]

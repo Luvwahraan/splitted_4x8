@@ -3,7 +3,7 @@
     "backcolor": "#cccccc",
     "name": "Split reduced right",
     "author": "Luvwahraan",
-    "notes": "Center text:        Hold keys (or tap with emojis)\nLeft/right text:    Tap keys (like caracters)\nLeft legend:        double tap\nCenter legend:      tap/double tap on hold only keys, hold on tap keys\nRight legend:       double tap\n\nRGui (right win key) reserved for compose (tap and double tap on RShift).\nReset is an hidden key, who needs to be in case.\n\nhttp://www.keyboard-layout-editor.com/\nhttps://kbfirmware.com/\nhttp://builder.swillkb.com/",
+    "notes": "Normal keys\n┌───────────────┐┌───────────────┐\n│1Tap       Hold││BLACK       GRN│\n│Alt    ShiftAlt││RED      PURPLE│\n│2t      2t hold││     BLUE      │\n├───────────────┤├───────────────┤\n│FN      FN hold││     BLACK     │\n└───────────────┘└───────────────┘\nSymbols keys:\n┌───────────────┐┌───────────────┐\n│1Tap      Shift││BLACK       GRN│\n│Alt    ShiftAlt││RED      PURPLE│\n│2t           FN││     BLUE      │\n├───────────────┤├───────────────┤\n│3t      FN hold││     BLACK     │\n└───────────────┘└───────────────┘\nPurple keys are specials.\n\nReset is an hidden key, who needs to be in case.\n\n\nhttp://www.keyboard-layout-editor.com/\nhttps://kbfirmware.com/\nhttp://builder.swillkb.com/",
     "radii": "10px",
     "switchMount": "cherry",
     "switchBrand": "outemu",
@@ -12,52 +12,91 @@
   },
   [
     {
+      "c": "#970cce",
+      "t": "#cccccc"
+    },
+    "Layer",
+    {
+      "c": "#f0b5ff",
+      "t": "#000000\n#1c339e\n#398c5a\n#1c339e\n#000000\n#000000\n#9e1c1c\n#970cce",
+      "a": 0
+    },
+    "@\n⑥\n6\n\n⌥⑥\n\n^",
+    "+\n⑦\n7\n\n⌥⑦\n\n±\n¬",
+    "-\n⑧\n8\n\n⌥⑧\n\n−\n¼",
+    "/\n⑨\n9\n\n⌥⑨\n\n÷\n½",
+    "*\n⑩\n0\n\n⌥⑩\n\n×\n¾",
+    "=\n⑪\n°\n\n⌥⑪\n\n≠\n′",
+    "%\n⑫\n`\n\n⌥⑫\n\n‰\n″"
+  ],
+  [
+    {
       "c": "#a3ccff",
-      "a": 7,
-      "f": 9,
+      "t": "#000000",
+      "a": 4,
+      "f": 4,
       "h": 1.5
     },
     "⌫",
     {
-      "c": "#f0b5ff",
-      "t": "#000000\n#9e1c1c\n#398c5a\n#970cce\n\n#9e1c1c",
-      "a": 0,
-      "f": 5
+      "c": "#970cce",
+      "t": "#cccccc\n\n#ffffff",
+      "f": 6
     },
-    "@\n^\n6\n\n⑥\n⌥⑥",
-    "+\n±\n7\n¬\n⑦\n⌥⑦",
-    "-\n−\n8\n¼\n⑧\n⌥⑧",
-    "/\n÷\n9\n½\n⑨\n⌥⑨",
-    "*\n×\n0\n¾\n⑩\n⌥⑩",
-    "=\n≠\n°\n′\n⑪\n⌥⑪",
-    "%\n‰\n`\n″\n⑫\n⌥⑫"
+    "🕪\n\n⎈",
+    {
+      "c": "#feffc9",
+      "t": "#000000\n#1c339e\n#398c5a\n#1c339e\n#9e1c1c\n\n#9e1c1c\n#970cce",
+      "f": 3
+    },
+    "^\n\n!\n\n\n\nə",
+    "v\n\n\n\n\n\nə",
+    "d\n\n\n\n\n\nə\nÐ",
+    "l\n\n\n\n\n\nə\n£",
+    {
+      "c": "#a3ccff",
+      "t": "#000000\n#1c339e\n#398c5a\n#1c339e\n#000000\n#000000\n#9e1c1c\n#970cce\n\n\n\n#9e1c1c",
+      "a": 0
+    },
+    "j\n\n\n\n⭾\n\nə",
+    "z\n\n\n\n⭾\n\nə"
   ],
   [
     {
       "x": 1,
-      "c": "#feffc9",
-      "t": "#000000\n#9e1c1c\n#398c5a\n#970cce",
-      "a": 4,
-      "f": 6
-    },
-    "^\n¡\n!",
-    "v\nˇ",
-    "d\nð\n\nÐ",
-    "l\n/\n\n£",
-    "j\nĳ",
-    "z\nə",
-    {
       "c": "#970cce",
       "t": "#cccccc",
-      "a": 3,
-      "f": 9
-    },
-    "⎌\n\n\n\n😊",
-    {
-      "x": 0.25,
-      "c": "#000000",
-      "t": "#cccccc\n#9e1c1c\n#398c5a",
       "a": 4,
+      "f": 8,
+      "f2": 3
+    },
+    "⎌\n😊",
+    {
+      "c": "#feffc9",
+      "t": "#000000\n#1c339e\n#398c5a\n#1c339e\n\n\n#9e1c1c\n#970cce",
+      "f": 3
+    },
+    "c\nç\n\n\n\n\n©\nſ",
+    {
+      "n": true
+    },
+    "t\nþ",
+    "s\nß",
+    "r\n®\n\n™",
+    {
+      "t": "#000000\n#1c339e\n#398c5a\n#1c339e\n#000000\n#000000\n#9e1c1c\n#970cce",
+      "a": 0,
+      "n": true
+    },
+    "n\n~\n\n\nWS→",
+    {
+      "t": "#000000\n#1c339e\n#398c5a\n#1c339e\n\n\n#9e1c1c\n#970cce",
+      "a": 4
+    },
+    "m\n¯\n\nº",
+    {
+      "c": "#000000",
+      "t": "#cccccc\n#9e1c1c",
       "f": 2
     },
     "Hidden\nreset\n\n\n\n\nkey"
@@ -65,73 +104,33 @@
   [
     {
       "y": -0.5,
-      "c": "#a3ccff",
-      "t": "#000000",
-      "a": 7,
-      "f": 9,
+      "c": "#1c339e",
+      "t": "#cccccc",
+      "f": 7,
       "h": 1.5
     },
-    "⎆"
+    "⎆\n\n⌥\n⎈"
   ],
   [
     {
       "y": -0.5,
       "x": 1,
-      "c": "#feffc9",
-      "t": "#000000\n#9e1c1c\n#398c5a\n#970cce",
-      "a": 0,
-      "f": 6
-    },
-    "c\n©\n\nſ\nç",
-    {
-      "a": 4,
-      "n": true
-    },
-    "t\nþ",
-    "s\nß",
-    "r\n®\n\n™",
-    "n\n~",
-    "m\n¯\n\nº",
-    {
-      "c": "#71f0de",
-      "t": "#000000",
-      "a": 7,
-      "f": 9
-    },
-    "🕪\n\n\n\n⎈"
-  ],
-  [
-    {
-      "c": "#a3ccff",
-      "a": 3
-    },
-    "␣\n\n\n\n\nWS→",
-    {
-      "c": "#feffc9",
-      "t": "#000000\n#9e1c1c\n#398c5a\n#970cce",
-      "a": 4,
-      "f": 6
-    },
-    "’\n¿\n?\n̉",
-    "q\n°\n\n̛\n\n\n\n\n\n̉",
-    "g\nµ",
-    "h\n†\n\n‡",
-    {
       "c": "#9e1c1c",
-      "t": "#cccccc\n#cccccc\n#398c5a\n#970cce"
+      "fa": [
+        8
+      ]
     },
-    "f\n˛\n\nª\n⎇",
+    "␣\n\n\n\n\n\n\n⎇",
     {
-      "c": "#71f0de",
-      "t": "#000000\n#9e1c1c\n#398c5a\n#970cce"
+      "c": "#feffc9",
+      "t": "#000000\n#1c339e\n#398c5a\n#1c339e\n\n\n#9e1c1c\n#970cce",
+      "f": 3
     },
-    "w\n˘\n\n\n≣",
-    {
-      "c": "#398c5a",
-      "t": "#cccccc\n\n\n\n#ffffff",
-      "a": 7,
-      "f": 9
-    },
-    "🡅\n\n\n\n⎄"
+    "’\n⎄\nFN\n̉\n\n\n¿",
+    "q\n\n\n\n\n\n°\n̛\n\n̉",
+    "g\n\n\n\n\n\nµ",
+    "h\n\n\n\n\n\n†\n‡",
+    "f\n\n❖\n\n\n\n˛\nª",
+    "w\n˘\n🡅"
   ]
 ]
