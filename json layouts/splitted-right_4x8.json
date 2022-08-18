@@ -43,7 +43,7 @@
     "⌫",
     {
       "c": "#970cce",
-      "t": "#cccccc\n\n#ffffff",
+      "t": "#cccccc",
       "f": 6
     },
     "🕪",
@@ -58,9 +58,13 @@
     },
     "v\n\n\n\n\n\nə",
     {
-      "t": "#000000\n\n\n\n\n\n#9e1c1c\n#970cce"
+      "t": "#000000\n\n\n\n\n\n#9e1c1c\n#970cce",
+      "a": 0
     },
-    "d\n\n\n\n\n\nə\nÐ",
+    "d\n\n\n\n⬆\n\nə\nÐ",
+    {
+      "a": 4
+    },
     "l\n\n\n\n\n\nə\n£",
     {
       "c": "#a3ccff",
@@ -82,17 +86,17 @@
     "c\n\n\n\n\n\n©\nſ",
     {
       "t": "#000000\n\n\n\n\n\n#9e1c1c",
+      "a": 0,
       "n": true
     },
-    "t\n\n\n\n\n\nþ",
-    "s\n\n\n\n\n\nß",
+    "t\n\n\n\n⬅\n\nþ",
+    "s\n\n\n\n⬇\n\nß",
     {
       "t": "#000000\n\n\n\n\n\n#9e1c1c\n#970cce"
     },
-    "r\n\n\n\n\n\n®\n™",
+    "r\n\n\n\n➡\n\n®\n™",
     {
-      "t": "#000000\n\n\n\n\n\n#9e1c1c",
-      "a": 0
+      "t": "#000000\n\n\n\n\n\n#9e1c1c"
     },
     "n\n\n\n\nWS→\n\n~",
     {

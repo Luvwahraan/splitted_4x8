@@ -24,6 +24,7 @@
 #define BP_QUIT     LCTL(BP_Q)
 #define BP_FIND     LCTL(BP_F)
 #define BP_REPL     LCTL(BP_R)
+#define BP_MUTE     KC_MUTE
 
 #define BP_LSUPER   KC_LGUI
 #define BP_RSUPER   KC_RGUI
@@ -42,8 +43,8 @@
 // Win10 workspaces
 #define MOVW        LALT(KC_F7)     // move window
 #define RESW        LALT(KC_F8)     // resize window
-#define WLWS        LAG(KC_LEFT)// go to left workspace
-#define WRWS        LAG(KC_RIGHT)// go to right workspace
+#define WLWS        LAG(KC_LEFT)    // go to left workspace
+#define WRWS        LAG(KC_RIGHT)   // go to right workspace
 
 #define APPMENU     LALT(KC_F1)     // App menu
 #define APPFINDER   LALT(KC_F2)     // App finder

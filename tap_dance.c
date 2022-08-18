@@ -50,21 +50,21 @@ uint8_t check_tap_state(qk_tap_dance_state_t *_state) {
 void td_function_finished(qk_tap_dance_state_t *_state, void *user_data) {
   qk_tap_dance_pair_t *pair = (qk_tap_dance_pair_t *)user_data;
   switch (_state->count) {
-    case 1: register_code(pair->kc1); break;
-    case 2: register_code(pair->kc2); break;
-    case 3: register_code(KC_LALT); register_code(pair->kc2); break;
-    case 4: register_code(KC_LCTRL); register_code(pair->kc2); break;
-    default: register_code(pair->kc1); break;
+    case 1: register_code16(pair->kc1); break;
+    case 2: register_code16(pair->kc2); break;
+    case 3: register_code16(KC_LALT); register_code16(pair->kc2); break;
+    case 4: register_code16(KC_LCTRL); register_code16(pair->kc2); break;
+    default: register_code16(pair->kc1); break;
   }
 }
 void td_function_reset(qk_tap_dance_state_t *_state, void *user_data) {
   qk_tap_dance_pair_t *pair = (qk_tap_dance_pair_t *)user_data;
   switch (_state->count) {
-    case 1: unregister_code(pair->kc1); break;
-    case 2: unregister_code(pair->kc2); break;
-    case 3: unregister_code(KC_LALT); unregister_code(pair->kc2); break;
-    case 4: unregister_code(KC_LCTRL); unregister_code(pair->kc2); break;
-    default: unregister_code(pair->kc1); break;
+    case 1: unregister_code16(pair->kc1); break;
+    case 2: unregister_code16(pair->kc2); break;
+    case 3: unregister_code16(KC_LALT); unregister_code16(pair->kc2); break;
+    case 4: unregister_code16(KC_LCTRL); unregister_code16(pair->kc2); break;
+    default: unregister_code16(pair->kc1); break;
   }
 }
 // end Function
@@ -77,14 +77,14 @@ void td_holdtap_finished(qk_tap_dance_state_t *_state, void *user_data) {
   tdState = check_tap_state(_state);
   switch (tdState) {
   case SINGLE_TAP_TD:
-    register_code(pair->kc1);
+    register_code16(pair->kc1);
     break;
   case SINGLE_HOLD_TD:
-    register_code(pair->kc2);
+    register_code16(pair->kc2);
     break;
   case UNKNOWN_TD:
   default:
-    register_code(pair->kc2);
+    register_code16(pair->kc2);
     break;
   }
 }
@@ -93,14 +93,14 @@ void td_holdtap_reset(qk_tap_dance_state_t *_state, void *user_data) {
   tdState = check_tap_state(_state);
   switch (tdState) {
   case SINGLE_TAP_TD:
-    unregister_code(pair->kc1);
+    unregister_code16(pair->kc1);
     break;
   case SINGLE_HOLD_TD:
-    unregister_code(pair->kc2);
+    unregister_code16(pair->kc2);
     break;
   case UNKNOWN_TD:
   default:
-    unregister_code(pair->kc2);
+    unregister_code16(pair->kc2);
     break;
   }
   tdState = 0;
@@ -111,22 +111,22 @@ void td_holddtap_finished(qk_tap_dance_state_t *_state, void *user_data) {
   tdState = check_tap_state(_state);
   switch (tdState) {
   case SINGLE_TAP_TD:
-    register_code(hdtap->tap);
+    register_code16(hdtap->tap);
     break;
   case SINGLE_HOLD_TD:
-    register_code(hdtap->hold);
+    register_code16(hdtap->hold);
     break;
   case DOUBLE_TAP_TD:
-    register_code(hdtap->dtap);
-    unregister_code(hdtap->dtap);
-    register_code(hdtap->dtap);
+    register_code16(hdtap->dtap);
+    unregister_code16(hdtap->dtap);
+    register_code16(hdtap->dtap);
     break;
   case DOUBLE_HOLD_TD:
-    register_code(hdtap->dhold);
+    register_code16(hdtap->dhold);
     break;
   case UNKNOWN_TD:
   default:
-    register_code(hdtap->hold);
+    register_code16(hdtap->hold);
     break;
   }
 }
@@ -135,20 +135,20 @@ void td_holddtap_reset(qk_tap_dance_state_t *_state, void *user_data) {
   tdState = check_tap_state(_state);
   switch (tdState) {
   case SINGLE_TAP_TD:
-    unregister_code(hdtap->tap);
+    unregister_code16(hdtap->tap);
     break;
   case SINGLE_HOLD_TD:
-    unregister_code(hdtap->hold);
+    unregister_code16(hdtap->hold);
     break;
   case DOUBLE_TAP_TD:
-    unregister_code(hdtap->dtap);
+    unregister_code16(hdtap->dtap);
     break;
   case DOUBLE_HOLD_TD:
-    unregister_code(hdtap->dhold);
+    unregister_code16(hdtap->dhold);
     break;
   case UNKNOWN_TD:
   default:
-    unregister_code(hdtap->hold);
+    unregister_code16(hdtap->hold);
     break;
   }
   tdState = 0;
@@ -162,37 +162,36 @@ void td_LShift_finished(qk_tap_dance_state_t *_state, void *user_data) {
   tdState = check_tap_state(_state);
   switch (tdState) {
   case SINGLE_TAP_TD:
-      register_code(BP_COMPOSE);
-      break;
+    register_code16(BP_COMPOSE);
+    break;
   case SINGLE_HOLD_TD:
-      register_code(KC_LSHIFT);
-      break;
+    register_code16(KC_LSHIFT);
+    break;
   case DOUBLE_TAP_TD:
-      register_code(BP_COMPOSE);
-      unregister_code(BP_COMPOSE);
-      register_code(BP_COMPOSE);
-      break;
+    tap_code(BP_COMPOSE);
+    register_code16(BP_COMPOSE);
+    break;
   case UNKNOWN_TD:
   default:
-      register_code(BP_COMPOSE);
-      break;
+    register_code16(BP_COMPOSE);
+    break;
     }
 }
 void td_LShift_reset(qk_tap_dance_state_t *_state, void *user_data) {
   tdState = check_tap_state(_state);
   switch (tdState) {
-    case SINGLE_TAP_TD:
-      unregister_code(BP_COMPOSE);
-      break;
-    case SINGLE_HOLD_TD:
-      unregister_code(KC_LSHIFT);
-      break;
-    case UNKNOWN_TD:
-    case DOUBLE_TAP_TD:
-      unregister_code(BP_COMPOSE);
-    default:
-      unregister_code(BP_COMPOSE);
-      break;
+  case SINGLE_TAP_TD:
+    unregister_code16(BP_COMPOSE);
+    break;
+  case SINGLE_HOLD_TD:
+    unregister_code16(KC_LSHIFT);
+    break;
+  case UNKNOWN_TD:
+  case DOUBLE_TAP_TD:
+    unregister_code16(BP_COMPOSE);
+  default:
+    unregister_code16(BP_COMPOSE);
+    break;
   }
   tdState = 0;
 }
@@ -200,37 +199,36 @@ void td_RShift_finished(qk_tap_dance_state_t *_state, void *user_data) {
   tdState = check_tap_state(_state);
   switch (tdState) {
   case SINGLE_TAP_TD:
-      register_code(BP_COMPOSE);
+      register_code16(BP_COMPOSE);
       break;
   case SINGLE_HOLD_TD:
-      register_code(KC_RSHIFT);
-      break;
+    register_code16(KC_RSHIFT);
+    break;
   case DOUBLE_TAP_TD:
-      register_code(BP_COMPOSE);
-      unregister_code(BP_COMPOSE);
-      register_code(BP_COMPOSE);
-      break;
+    tap_code(BP_COMPOSE);
+    register_code16(BP_COMPOSE);
+    break;
   case UNKNOWN_TD:
   default:
-      register_code(BP_COMPOSE);
-      break;
+    register_code16(BP_COMPOSE);
+    break;
   }
 }
 void td_RShift_reset(qk_tap_dance_state_t *_state, void *user_data) {
   tdState = check_tap_state(_state);
   switch (tdState) {
-    case SINGLE_TAP_TD:
-      unregister_code(BP_COMPOSE);
-      break;
-    case SINGLE_HOLD_TD:
-      unregister_code(KC_RSHIFT);
-      break;
-    case UNKNOWN_TD:
-    case DOUBLE_TAP_TD:
-      unregister_code(BP_COMPOSE);
-    default:
-      unregister_code(BP_COMPOSE);
-      break;
+  case SINGLE_TAP_TD:
+    unregister_code16(BP_COMPOSE);
+    break;
+  case SINGLE_HOLD_TD:
+    unregister_code16(KC_RSHIFT);
+    break;
+  case UNKNOWN_TD:
+  case DOUBLE_TAP_TD:
+    unregister_code16(BP_COMPOSE);
+  default:
+    unregister_code16(BP_COMPOSE);
+    break;
   }
   tdState = 0;
 }
