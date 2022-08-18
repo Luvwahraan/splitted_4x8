@@ -29,30 +29,35 @@ enum {
   TDRALT,
   TDBPESC,
   TDFRESC,
-  TDMUTERCTL,
+  
   TDCOPYPASTE,
   TDCOPYCUT,
-  TDTABLCTL,
-  TDLSAGRV,
-  TDRSW,
-  TDRSM,
+  
+  // Left hand tap dances
+  LRETMODS,
+  TDBTAB,
+  TDLSHIFTAGRV,
+  TDLSHIFTA,
   TDAGRVSUPER,
-  TDYLALT,
+  TDYLGUI,
   TDFRALT,
   TDDOTUNDO,
   TDKFN,
-  
   TDXCUT,
-  TDFAPP,
-  TDEGRVUP,
-  TDCOMMADN, 
-  TDBTAB,
-  TDSPCALT,
-  LRETMODS,
+  TDEGRVHOME,
+  TDCOMMAEND,
+  
+  // Right hand tap dances
   RRETMODS,
-  TDQUNDO,
-  QUOTFN,
+  TDRSHIFTW,
+  TDRSHIFTM, 
+  TDFAPP,
   TDCCEDEMOJI,
+  QUOTFN,
+  TDQUNDO,
+  
+  // Both hands tap dances
+  TDSPCALT,
  
   TDLDESKMAJWIN,
   TDLDESKMAJLINUX,
@@ -89,18 +94,19 @@ enum {
 #define TD_XCUT     TD(TDXCUT)
 
 #define TD_CCED     TD(TDCCEDEMOJI)
-#define TD_AGRV     TD(TDLSAGRV)
-#define TD_Y        TD(TDYLALT)
+#define TD_AGRV     TD(TDLSHIFTAGRV)
+#define TD_EGRV     TD(TDEGRVHOME)
+#define TD_Y        TD(TDYLGUI)
 #define TD_B        TD(TDBTAB)
 #define TD_F        TD(TDFAPP)
-#define TD_EGRV     TD(TDEGRVUP)
-#define TD_COMMA    TD(TDCOMMADN)
 #define TD_DOT      TD(TDDOTUNDO)
 #define TD_K        TD(TDKFN)
 #define TD_QUOT     TD(QUOTFN)
 #define TD_Q        TD(TDQUNDO)
-#define TD_W        TD(TDRSW)
-#define TD_M        TD(TDRSM)
+#define TD_W        TD(TDRSHIFTW)
+#define TD_M        TD(TDRSHIFTM)
+#define TD_A        TD(TDLSHIFTA)
+#define TD_COMM     TD(TDCOMMAEND)
 
 #define TD_SPC      TD(TDSPCALT)
 #define TD_LRET     TD(LRETMODS)
